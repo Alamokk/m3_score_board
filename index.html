@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Score Board</h1>
+    <div id="container">
+        <div class="score-card">
+            <h2 class="sub-title">Home</h2>
+            <div class="total-score">
+                <span id="home-score">0</span>
+            </div>
+            <div class="counter-wrapper">
+                <span class="counter" onclick="addHomeScore(1)">+1</span>
+                <span class="counter" onclick="addHomeScore(2)">+2</span>
+                <span class="counter" onclick="addHomeScore(3)">+3</span>
+            </div>
+        </div>
+        <div class="score-card">
+            <h2 class="sub-title">Guest</h2>
+            <div class="total-score">
+                <span id="guest-score">0</span>
+            </div>
+            <div class="counter-wrapper">
+                <span class="counter" onclick="addGuestScore(1)">+1</span>
+                <span class="counter" onclick="addGuestScore(2)">+2</span>
+                <span class="counter" onclick="addGuestScore(3)">+3</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
